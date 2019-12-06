@@ -1,0 +1,9 @@
+<%# <% @files.each do |file| %> 
+    <h1><%= link_to "FILE",  @asdasdasd %></h1>
+<%# <% end %> 
+<%# <p>Find me in app/views/files/index.html.erb</p> %>
+<ul>
+<% @files.each do |file| %>
+    <li class="file"><%= link_to file, files_path(next: file) %></li>
+<% end %>
+</ul>
